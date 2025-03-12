@@ -1,0 +1,10 @@
+provider "github" {
+  token = "use git personal token"
+}
+
+resource "github_repository" "git-repository" {
+  name        = "Terraform-Code"
+  description = "My All Terraform Codes"
+  visibility  = "public"
+  auto_init   = "true"
+}
